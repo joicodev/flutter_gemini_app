@@ -6,9 +6,12 @@ part of 'basic_chat_provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$basicChatHash() => r'9ae9fbaa50d6824b12ad1486cf5f1dd879adab6c';
+String _$basicChatHash() => r'a18f8280dede7f8a82647de4db74e20a6b0e716f';
 
-/// See also [BasicChat].
+/// Manages the state (`List<Message>`) of a basic chat conversation with Gemini.
+/// Handles user messages and fetches AI responses via `BasicPromptUseCase`.
+///
+/// Copied from [BasicChat].
 @ProviderFor(BasicChat)
 final basicChatProvider =
     AutoDisposeNotifierProvider<BasicChat, List<Message>>.internal(

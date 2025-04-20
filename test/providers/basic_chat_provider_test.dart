@@ -26,7 +26,7 @@ void main() {
 
       container
           .read(basicChatProvider.notifier)
-          .addMessage(partialText: partialText, user: user);
+          .sendUserMessage(partialText: partialText, user: user);
 
       final messages = container.read(basicChatProvider);
       expect(messages, hasLength(1));
@@ -42,10 +42,10 @@ void main() {
 
       container
           .read(basicChatProvider.notifier)
-          .addMessage(partialText: partialText1, user: user);
+          .sendUserMessage(partialText: partialText1, user: user);
       container
           .read(basicChatProvider.notifier)
-          .addMessage(partialText: partialText2, user: user);
+          .sendUserMessage(partialText: partialText2, user: user);
 
       final messages = container.read(basicChatProvider);
       expect(messages, hasLength(2));

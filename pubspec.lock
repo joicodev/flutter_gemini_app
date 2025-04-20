@@ -539,8 +539,8 @@ packages:
     dependency: transitive
     description:
       path: "."
-      ref: main
-      resolved-ref: "49aeb2fe195f187078430570f7a4d44eca4ce2dd"
+      ref: develop
+      resolved-ref: "66b0308a56da6c00c71d362408e3a32e6f67f108"
       url: "git@gitlab.com:gemini_chat_app/gemini-dart-client.git"
     source: git
     version: "1.0.0"

@@ -34,6 +34,6 @@ class BasicPromptScreen extends ConsumerWidget {
 
   void _onSendPressed(WidgetRef ref, User user, PartialText partialText) {
     final basicChatNotifier = ref.read(basicChatProvider.notifier);
-    basicChatNotifier.addMessage(partialText: partialText, user: user);
+    basicChatNotifier.sendUserMessage(partialText: partialText, user: user);
   }
 }
