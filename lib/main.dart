@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_gemini_app/config/router/app_router.dart';
 import 'package:flutter_gemini_app/config/theme/app_theme.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-void main() {
+void main() async {
   AppTheme.setSystemUIOverlayStyle(true);
+  await dotenv.load(fileName: ".env");
+
   runApp(ProviderScope(child: const GeminiApp()));
 }
 
