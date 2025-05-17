@@ -1,5 +1,7 @@
 import 'package:ai_chat_dart_sdk/ai_chat_dart_sdk.dart';
 import 'package:flutter_gemini_app/config/env.dart';
+import 'package:flutter_gemini_app/lang/providers/app_localization_provider.dart';
+import 'package:flutter_gemini_app/lang/utils/utils_translation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
@@ -26,4 +28,10 @@ AIChatDioClient aiChatDioClient(Ref ref) {
 GeminiChatRepository geminiRepository(Ref ref) {
   final aiChatDioClient = ref.read(aiChatDioClientProvider);
   return GeminiChatRepositoryImpl(aiChatDioClient);
+}
+
+@riverpod
+AppTranslate appTranslate(Ref ref) {
+  final loc = ref.read(appLocalizationsProvider);
+  return AppTranslate(loc);
 }

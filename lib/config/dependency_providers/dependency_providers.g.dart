@@ -64,5 +64,21 @@ final geminiRepositoryProvider =
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
 typedef GeminiRepositoryRef = AutoDisposeProviderRef<GeminiChatRepository>;
+String _$appTranslateHash() => r'191424372fbe49ecb6340d1645b0679d06dd99ce';
+
+/// See also [appTranslate].
+@ProviderFor(appTranslate)
+final appTranslateProvider = AutoDisposeProvider<AppTranslate>.internal(
+  appTranslate,
+  name: r'appTranslateProvider',
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product') ? null : _$appTranslateHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+typedef AppTranslateRef = AutoDisposeProviderRef<AppTranslate>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

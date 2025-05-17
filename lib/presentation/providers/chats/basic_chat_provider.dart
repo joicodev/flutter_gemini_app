@@ -1,4 +1,5 @@
 import 'package:ai_chat_dart_sdk/ai_chat_dart_sdk.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart';
 import 'package:flutter_gemini_app/config/dependency_providers/dependency_providers.dart';
 import 'package:flutter_gemini_app/presentation/providers/chats/is_gemini_writing_provider.dart';
@@ -44,15 +45,19 @@ class BasicChat extends _$BasicChat {
     _setIsWriting(false);
     result.fold(
       (failure) {
-        print('❌ Error fetching Gemini response: ${failure.message}');
+        debugPrint(
+          '❌ Error fetching Gemini response: ${failure.runtimeType} = ${failure.message}',
+        );
+
+        final translate = ref.read(appTranslateProvider);
         _createTextMessage(
-          text: failure.message,
           status: Status.error,
+          text: translate.fromBaseException(failure),
           author: User(id: 'system_error', firstName: 'System'),
         );
       },
       (responseText) {
-        print('✅ Success fetching Gemini response: $responseText');
+        debugPrint('✅ Success fetching Gemini response: $responseText');
         _createTextMessage(
           text: responseText,
           author: ref.read(geminiUserProvider),

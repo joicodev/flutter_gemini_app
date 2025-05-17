@@ -6,7 +6,7 @@ part of 'basic_chat_provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$basicChatHash() => r'a18f8280dede7f8a82647de4db74e20a6b0e716f';
+String _$basicChatHash() => r'd96cc9345d0275a6477643043bbd3601aaef5ca1';
 
 /// Manages the state (`List<Message>`) of a basic chat conversation with Gemini.
 /// Handles user messages and fetches AI responses via `BasicPromptUseCase`.

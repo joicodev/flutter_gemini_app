@@ -1,0 +1,15 @@
+{
+  "helloWorld": " Hola Mundo!",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  "connectionErrorMessage": "Lo sentimos, no hemos podido conectarnos al servidor. Por favor, intenta de nuevo más tarde.",
+  "receiveTimeoutErrorMessage": "Lo sentimos, no hemos podido recibir la respuesta del servidor. Por favor, intenta de nuevo más tarde.",
+  "sendTimeoutErrorMessage": "Lo sentimos, no hemos podido enviar la solicitud al servidor. Por favor, intenta de nuevo más tarde.",
+  "connectionTimeoutErrorMessage": "Lo sentimos, ha habido un error en la conexión. Por favor, intenta de nuevo más tarde.",
+  "badCertificateErrorMessage": "Lo sentimos, el certificado del servidor no es válido. Por favor, informa al administrador del sitio.",
+  "badResponseErrorMessage": "Lo sentimos, la respuesta del servidor no es válida. Por favor, intenta de nuevo más tarde.",
+  "unknownErrorMessage": "Lo sentimos, ha habido un error desconocido. Por favor, intenta de nuevo más tarde.",
+  "argumentsErrorMessage": "Lo sentimos, los argumentos de la solicitud no son válidos. Por favor, intenta de nuevo más tarde.",
+  "serializeDataErrorMessage": "Lo sentimos, ha habido un error al serializar los datos. Por favor, intenta de nuevo más tarde."
+}
