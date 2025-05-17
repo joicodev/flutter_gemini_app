@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gemini_app/config/extensions/context_extension.dart';
 import 'package:flutter_gemini_app/config/router/app_routes_paths.dart';
 import 'package:go_router/go_router.dart';
 

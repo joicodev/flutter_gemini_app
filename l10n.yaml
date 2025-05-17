@@ -1,6 +1,6 @@
-arb-dir: lib/lang/l10n
+arb-dir: lib/config/lang/l10n
 template-arb-file: app_en.arb
 output-localization-file: app_localizations.dart
 
-output-dir: lib/lang/generated/l10n
+output-dir: lib/generated/l10n
 synthetic-package: false

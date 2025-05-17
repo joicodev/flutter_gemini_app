@@ -1,5 +1,10 @@
 import 'package:ai_chat_dart_sdk/ai_chat_dart_sdk.dart';
-import 'package:flutter_gemini_app/lang/generated/l10n/app_localizations.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_gemini_app/generated/l10n/app_localizations.dart';
+
+extension LocalizationExtension on BuildContext {
+  AppLocalizations get loc => AppLocalizations.of(this)!;
+}
 
 class AppTranslate {
   final AppLocalizations loc;

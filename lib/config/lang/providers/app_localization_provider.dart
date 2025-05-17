@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_gemini_app/lang/generated/l10n/app_localizations.dart';
+import 'package:flutter_gemini_app/generated/l10n/app_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'dart:ui';
 
